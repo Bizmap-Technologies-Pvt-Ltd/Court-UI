@@ -1,0 +1,34 @@
+/* Sidebar Styling */
+.layout-side-section {
+  background: white;
+  box-shadow: var(--shadow-sm);
+  border-right: 1px solid var(--border-color);
+  width: 240px;
+  z-index: 10;
+}
+
+.sidebar-item {
+  padding: var(--padding-sm) var(--padding-md);
+  border-radius: 6px;
+  margin: 4px var(--padding-xs);
+  transition: all 0.2s;
+  color: var(--text-color);
+}
+
+.sidebar-item:hover {
+  background: var(--background-color);
+}
+
+.sidebar-item.selected {
+  background: var(--primary-color);
+  color: white;
+}
+
+.sidebar-group-title {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  padding: var(--padding-xs) var(--padding-md);
+  margin-top: var(--padding-md);
+}

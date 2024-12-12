@@ -1,0 +1,91 @@
+/* Enhanced Cards and Widgets */
+.widget, .card {
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-all);
+  position: relative;
+  overflow: hidden;
+}
+
+.widget:hover, .card:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-2px);
+}
+
+.widget::before, .card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition-opacity);
+}
+
+.widget:hover::before, .card:hover::before {
+  opacity: 1;
+}
+
+.card-header {
+  padding-bottom: var(--spacing-4);
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: var(--spacing-6);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-card {
+  text-align: center;
+  padding: var(--spacing-8);
+  background: linear-gradient(135deg, white 0%, #f7fafc 100%);
+}
+
+.stats-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 1;
+  margin-bottom: var(--spacing-2);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.stats-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: var(--spacing-4);
+  padding: var(--spacing-4);
+}
+
+.quick-action-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-4);
+  background: white;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border-color);
+  transition: var(--transition-all);
+}
+
+.quick-action-item:hover {
+  background: var(--background-color);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}

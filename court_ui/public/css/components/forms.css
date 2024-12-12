@@ -1,0 +1,42 @@
+/* Form Elements */
+.form-control {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  padding: 8px 12px;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+  outline: none;
+}
+
+.control-label {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.form-group {
+  margin-bottom: var(--padding-md);
+}
+
+.checkbox {
+  width: var(--checkbox-size);
+  height: var(--checkbox-size);
+}
+
+.form-section {
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  padding: var(--padding-md);
+  margin-bottom: var(--padding-md);
+}
+
+.form-dashboard {
+  background: var(--background-color);
+  border-radius: 8px;
+  padding: var(--padding-md);
+}

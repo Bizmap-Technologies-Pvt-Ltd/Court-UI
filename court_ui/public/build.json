@@ -1,0 +1,21 @@
+{
+  "js/court_ui.bundle.js": [
+    "public/js/court_ui.js",
+    "public/js/utils/animations.js",
+    "public/js/utils/theme.js",
+    "public/js/utils/keyboard.js",
+    "public/js/components/DocketCard.js",
+    "public/js/components/JudgeCard.js"
+  ],
+  "css/court_ui.bundle.css": [
+    "public/css/base/variables.css",
+    "public/css/base/typography.css",
+    "public/css/components/navbar.css",
+    "public/css/components/sidebar.css",
+    "public/css/components/forms.css",
+    "public/css/components/buttons.css",
+    "public/css/components/cards.css",
+    "public/css/components/court-specific.css",
+    "public/css/components/list-view.css"
+  ]
+}

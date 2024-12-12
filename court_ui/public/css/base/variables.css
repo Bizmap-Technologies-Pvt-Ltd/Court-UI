@@ -1,0 +1,64 @@
+/* Theme Variables */
+:root {
+  /* Modern Color Palette */
+  --primary-color: #1a365d;
+  --secondary-color: #2b6cb0;
+  --accent-color: #c05621;
+  --background-color: #f8fafc;
+  --text-color: #1a202c;
+  --text-muted: #4a5568;
+  --border-color: #e2e8f0;
+  --success-color: #2f855a;
+  --error-color: #c53030;
+  --warning-color: #b7791f;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+  --gradient-accent: linear-gradient(135deg, #c05621 0%, #dd6b20 100%);
+  
+  /* Frappe v15 Specific */
+  --navbar-height: 60px;
+  --toolbar-height: 48px;
+  --page-head-height: 70px;
+  --checkbox-size: 14px;
+  
+  /* Enhanced Shadows */
+  --shadow-xs: 0 0 0 1px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Spacing */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+  
+  /* Border Radius */
+  --radius-sm: 0.125rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1rem;
+  --radius-full: 9999px;
+  
+  /* Transitions */
+  --transition-all: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-transform: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-opacity: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Z-index */
+  --z-0: 0;
+  --z-10: 10;
+  --z-20: 20;
+  --z-30: 30;
+  --z-40: 40;
+  --z-50: 50;
+}

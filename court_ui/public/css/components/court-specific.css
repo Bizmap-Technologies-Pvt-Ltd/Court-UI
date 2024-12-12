@@ -1,0 +1,132 @@
+/* Enhanced Court-specific Components */
+.docket-card {
+  border-left: 4px solid var(--primary-color);
+  padding: var(--spacing-6);
+  margin-bottom: var(--spacing-4);
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-all);
+  position: relative;
+  overflow: hidden;
+}
+
+.docket-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.docket-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: var(--transition-opacity);
+}
+
+.docket-card:hover::after {
+  opacity: 1;
+}
+
+.hearing-schedule {
+  background: linear-gradient(135deg, white 0%, var(--background-color) 100%);
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.case-status {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-2) var(--spacing-4);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.case-status-pending {
+  background: #fff8e1;
+  color: var(--warning-color);
+  box-shadow: 0 0 0 1px rgba(183, 121, 31, 0.1);
+}
+
+.case-status-completed {
+  background: #f0fff4;
+  color: var(--success-color);
+  box-shadow: 0 0 0 1px rgba(47, 133, 90, 0.1);
+}
+
+.case-status-urgent {
+  background: #fff5f5;
+  color: var(--error-color);
+  box-shadow: 0 0 0 1px rgba(197, 48, 48, 0.1);
+}
+
+.court-calendar {
+  background: white;
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-6);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--border-color);
+}
+
+.judge-card {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-6);
+  background: white;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-all);
+  border: 1px solid var(--border-color);
+  margin-bottom: var(--spacing-4);
+}
+
+.judge-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.judge-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-full);
+  margin-right: var(--spacing-4);
+  border: 3px solid white;
+  box-shadow: var(--shadow-md);
+}
+
+.judge-info {
+  flex: 1;
+}
+
+.judge-name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: var(--spacing-1);
+}
+
+.judge-title {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-2);
+}
+
+.case-count {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--spacing-1) var(--spacing-3);
+  background: var(--background-color);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}

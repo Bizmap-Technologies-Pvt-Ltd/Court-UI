@@ -1,0 +1,47 @@
+/* Main Theme File - Imports all components */
+@import "base/variables.css";
+@import "base/typography.css";
+@import "components/navbar.css";
+@import "components/sidebar.css";
+@import "components/forms.css";
+@import "components/buttons.css";
+@import "components/cards.css";
+@import "components/court-specific.css";
+@import "components/list-view.css";
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .layout-side-section {
+    position: fixed;
+    left: -240px;
+    top: 0;
+    bottom: 0;
+    transition: all 0.3s;
+    z-index: 1000;
+  }
+  
+  .layout-side-section.visible {
+    left: 0;
+  }
+  
+  .layout-main-section {
+    margin-left: 0 !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .navbar, .sidebar, .page-head {
+    display: none !important;
+  }
+  
+  .layout-main-section {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
